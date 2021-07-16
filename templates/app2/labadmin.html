@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link type="text/css" rel="stylesheet" href="{% static 'css/labadmin.css' %}">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="div2">
+    <h1> Greetings Business Partner</h1>
+<br>
+<h2>Already a User! Login Now</h2>
+<br>
+<h2 id="h22">Get Started with your Account </h2>
+
+</div>
+
+<div id="div1" >
+    <form method="post" action="" enctype="multipart/form-data" class="form">
+    {% csrf_token %}
+
+         <label>Create a Labadmin email:</label>
+    <input type="email" name="email">
+
+    <br>
+        <br>
+
+         <label>Create your admin password:</label>
+    <input type="password" name="password" >
+
+    <br>
+        <br>
+
+        <label>Enter your laboratory name:</label>
+    <input type="text" name="lab">
+
+    <br>
+        <br>
+
+    <label>Enter your laboratory Address including Pincode ,district, state :</label>
+    <textarea name="address"> Enter your details</textarea>
+
+    <br>
+         <br>
+
+        <label>Lab location:</label>
+        <input type="text" name="lablocation">
+
+        <br>
+            <br>
+
+    <label>Enter your Available lab Tests(include pricing for each test) :</label>
+    <textarea name="tests"> </textarea>
+
+    <br>
+         <br>
+    <label>Enter your  valid GST code :</label>
+    <input type="text" name="gstcode">
+
+    <br>
+         <br>
+
+    <label>Enter Your Lab brochure :</label>
+    <input type="file" name="file">
+
+    <br>
+        <br>
+
+    <input type="submit">
+    </form>
+</div>
+</form>
+
+</body>
+</html>

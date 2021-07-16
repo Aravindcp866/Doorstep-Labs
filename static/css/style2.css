@@ -1,0 +1,73 @@
+*{margin: 0px;padding:0px;}
+
+h1{
+padding-top:15px;
+text-align:center;
+color:tomato;
+}
+
+h2{
+color:tomato;
+text-align:center;}
+
+.div1{
+align:center
+width:auto;
+height:auto;
+background-color:black;
+}
+input[type=text],select{
+width:50%;
+padding:10px;
+margin-left:50;}
+
+input[type=submit],select{
+color:white;
+width:47.5%;
+padding:10px;
+margin-left:50;
+background-color:green;}
+
+search1{height:30px;
+width:50px;
+}
+.div2{
+margin:0px 100px 0px 100px;
+height:auto;
+}
+
+
+.a{
+
+  background-color:red;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius:20px;
+
+ }
+#button{margin-left:100px;}
+#p{font-size:20px;
+color:green;}
+
+#booknow{
+ background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius:20px;
+}
+.a1{
+
+
+  color: white;
+
+  text-decoration: none;
+  border-radius:20px;
+
+ }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <link type="text/css" rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <title>userprofile</title>
+</head>
+<body>
+
+<div class="div1">
+    <form method="post" action="">
+        {% csrf_token %}
+        <h1 class="h1"> Hi {{ username1 }} welcome back! </h1>
+    <br>
+     <h2 class="h2">Start Searching Your Labs </h2>
+    <br>
+       <input type="text" placeholder="Search your Location for available labs" name="search" >
+    <input type="submit" value="Click here to search">
+
+    </form>
+
+    </div>
+
+    <div class="div2">
+        <br>
+        <br>
+
+<h2>List of labs available in  </h2>
+        <p id="p"> {{ error }} </p>
+
+        {% for x in data %}
+        <ul>
+
+
+        <li>  {{ x.labname }}
+        <br>
+        <li><h4> {{ x.labtests }} </h4>  <div id="booknow"><a href="{% url 'booknow' %}" class="a1">Book Now</a></div> </li>
+
+        </ul>
+
+        {% endfor %}
+
+
+    </div>
+<br>
+<br>
+<div id="button">
+     <a href="{% url 'logout' %}" class="a">Logout</a>
+</div>
+
+
+
+
+
+
+</body>
+</html>

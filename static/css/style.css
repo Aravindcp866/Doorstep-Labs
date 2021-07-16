@@ -1,0 +1,165 @@
+*{margin: 0px;padding:0px;
+}
+nav{
+  position: fixed;
+  top: 0;  width: 100%;}
+
+ul{  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   overflow: hidden;
+   background-color:#001263;
+
+}
+.li1{
+float:left;
+margin:15px;
+}
+
+.a1:hover {
+  color:#f27f13;
+  padding:auto;
+
+}
+.a1{ text-decoration: none;
+color:white;}
+
+.narrow{
+ margin-left:100px;
+margin-right:100px;
+padding-top:25px;
+padding-bottom:25px;
+background-color:#40ad40;
+width:auto;
+height:auto:
+}
+h1{
+padding-top:30px;
+overflow:hidden;
+padding50px;
+color:white;
+margin-left:110px;}
+
+.img1{width:1149px;
+height:600px;
+margin-left:100px;
+margin-right:100px;
+}
+.narrow1{ margin-left:100px;
+margin-right:100px;}
+h2{
+color:white;
+text-align:center;}
+
+.narrow2{
+margin-left:100px;
+margin-right:100px;
+padding:auto;
+background-color:#40ad40;
+width:auto;
+height:auto:
+}
+
+
+h3{
+color:white;
+margin-left:110px;
+padding:20px 0px 20px 0px;
+}
+.h3{
+color:white;
+margin:0px 100px 0px 100px;
+padding:20px 0px 20px 0px;
+background-color: #f2f2f2;
+padding-top:5px;
+}
+.form1{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left:100px;
+  margin-right:100px;}
+
+label{margin-left:10px;
+padding-bottom:29px;
+
+}
+
+input[type=text],select{
+width:90%;
+padding:10px;
+margin-left:10px;}
+
+input[type=password],select{
+width:90%;
+padding:10px;
+margin-left:10px;}
+
+input[type=email],select{
+width:90%;
+padding:10px;
+margin-left:10px;}
+
+.input_tel{
+width:90%;
+padding:10px;
+margin-left:10px;}
+
+input[type=submit],select{
+width:90%;
+  background-color:#001263;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align:center;}
+
+input[type=radio],select{
+margin-left:10px;
+margin-top:10px;}
+
+.ul1{ list-style-type: none;
+background-color:white;
+}
+.ul2{ color:white;
+}
+.li2{float:left;
+margin-top:50px;
+margin-left:100px;
+margin-bottom:50px;}
+
+h4{text-align:center;
+margin-top:50px;
+}
+
+
+.a2{ color:black;
+font-family: Arial;
+text-decoration: none;
+}
+.a2:hover{
+color:#d9214c;}
+
+.w3-sofia {
+  font-family: "Allerta Stencil", Sans-serif;
+}
+.p1{color:white;
+font-size:20px;
+margin-left:110px;
+padding-bottom:20px;}
+
+.li3:link{
+  background-color: #5A20CB;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  float:left;
+  margin-left:100px;
+  margin-right:100px;
+  display: inline-block;
+
+}
+.li3:hover{
+background-color:crimson;}
+.h3{color:blue;}

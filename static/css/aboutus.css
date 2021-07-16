@@ -1,0 +1,17 @@
+*{margin:0px;
+padding:0px;}
+
+.div1{background:#4e9c57;
+height:400px;
+width:auto;
+}
+h2{color:white;
+padding-top:30px;
+padding-left:50px;
+padding-bottom:50px;
+}
+
+p{margin-left:100px;
+margin-right:200px;
+font-size:20px;
+color:white}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <nav>
+    <ul>
+        <li class="li1"><a class="a1" href="{% url 'homefunction' %}">Home</a> </li>
+        <li class="li1"> <a class="a1"  href="{% url 'aboutus' %}"> About us </a></li>
+        <li class="li1"><a class="a1"  href="{% url 'moreinfo' %}">services</a> </li>
+        <li class="li1"><a class="a1"  href="{% url 'contact' %}">contact us</a></li>
+        <li class="li1"><a class="a1"  href="{% url 'signin' %}">Sign In </a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="narrow">
+    <h1 class="w3-sofia"> <i class="fas fa-briefcase-medical"></i> Welcome to Doorstep labs your own laboratory </h1>
+
+</div>
+<div class="narrow2">
+    <h2 class="w3-sofia"> Worry in going to labs in this pandemic situation? Don't Worry We Have Solution</h2>
+    <h3 class="w3-sofia">Here Are Our Service : </h3>
+
+    <p class="p1 w3-sofia"><i class="fas fa-vial"></i> Your samples will be collected from your Doorstep</p>
+
+    <p class="p1 w3-sofia"> <i class="fas fa-clinic-medical"></i> Choose your own favourite Laboratory</p>
+
+    <p class="p1 w3-sofia" > <i class="fas fa-pills"></i> Delivering Medicines  </p>
+
+    <p class="p1 w3-sofia" > <i class="fas fa-ambulance"></i> Ambulance service </p>
+
+    <p class="p1 w3-sofia" > <i class="fas fa-money-check"></i> Easy payments </p>
+
+
+
+</div>
+<div>
+        <img  class="img1" src="{% static 'images/img5.jpg' %}">
+</div>
+
+<div>
+  <h3 class="h3"><label>New User! Create Your Account Right Now</label></h3>
+    <form method="post" action="" enctype="multipart/form-data" class="form1">
+         {% csrf_token %}
+
+        <label>Enter your first name:</label>
+        <input type="text" name="firstname">
+        <br>
+        <label>Enter your last name:</label>
+        <input type="text" name="lastname">
+        <br>
+        <label>Enter your Email id:</label>
+        <input type="email" name="email">
+        <br>
+        <label>Enter your Phone:</label>
+        <input class="input_tel" type="tel" name="phone">
+        <br>
+        <label>Enter your password:</label>
+        <input type="password" name="password">
+        <br>
+        <label>Confirm password:</label>
+        <input type="password" name="confirmpassword">
+        <br>
+        <input type="submit" name="submit">
+
+   </form>
+    </div>
+<footer>
+    <h4>More Information</h4>
+    <ul class="ul1">
+        <li class="li2"> <a href= "{% url 'more' %}#developer_contact" class="a2"> Developer Contact</a> </li>
+        <li  class="li2"> <a href="{% url 'more' %}#whyus"  class="a2">Why Us? </a> </li>
+        <li  class="li2"> <a href="{% url 'more' %}#addlab" class="a2">Lab Admin</a> </li>
+        <li  class="li2"> <a href="{% url 'labadmin' %}" class="a2">Add your Laboratory</a> </li>
+        <li  class="li2"> <a href="{% url 'more' %}#termsandconditions" class="a2">Terms and Use</a> </li>
+        <li  class="li2"> <a href="{% url 'more' %}#privacy-policy" class="a2">Privacy Policy</a> </li>
+        <br>
+        <li ><a class="li3" href="www.instagram.com">Follow us on Instagram <i class="fab fa-instagram"></i></a></li>
+        <li ><a class="li3"  href="www.facebook.com">Follow us on facebook <i class="fab fa-facebook-square"></i></a></li>
+        <li ><a class="li3" href="www.twitter.com">Follow us on Twitter <i class="fab fa-twitter-square"> </i></a> </li>
+
+
+    </ul>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+         <link type="text/css" rel="stylesheet" href="{% static 'css/booking.css' %}">
+    <title>Booknow</title>
+</head>
+<body>
+<p>DOORSTEP LABS</p>
+<div id="book">
+    <h2>Book your Test now!</h2>
+    <br>
+
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <label>Enter your Required Test:</label>
+            <br>
+            <br>
+            <textarea></textarea>
+            <br>
+                <br>
+
+           <input type="submit">
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{margin:0px;
+padding:0px;}label{ padding:20px;
+}
+.div1{margin:100px 100px 0px 100px;
+height:auto;
+background-color:gray;
+border-radius:20px;}
+h2{ font-style: oblique;
+padding:30px;}
+.div2{font-size:100px;
+font-style: oblique;
+color :green;
+margin-left:23%;
+margin-top:30px;
+}
